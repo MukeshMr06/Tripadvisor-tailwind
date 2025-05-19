@@ -11,197 +11,244 @@
 </head>
 
 <body>
+    <div class=" mx-40">
     <!--navbar-->
-    <nav class="mx-[100px] md:flex justify-between">
-        <div class="flex  mt-3 ml-8 gap-2 cursor-pointer">
-            <img class="w-14" src="./images/triplogo.png" alt="">
-            <h2 class="mt-3 text-2xl font-bold">Tripadivsor</h2>
+    <nav class=" md:flex justify-between  items-center pt-3">
+        <div class="flex gap-3 items-center cursor-pointer">
+            <img class="w-10 h-10" src="./images/triplogo.png" alt="">
+            <h2 class=" text-2xl font-bold">Tripadivsor</h2>
         </div>
-        <div class="flex text-xl gap-5 cursor-pointer mt-6">
-            <p class="hover:underline">Discover</p>
-            <p class="hover:underline">Trips</p>
-            <p class="hover:underline">Review</p>
-            <p class="hover:underline">Forms</p>
+        <div class="flex gap-2 items-center text-lg gap-5 cursor-pointer">
+            <p class=" px-4 py-2 text-sm font-medium hover:bg-gray-100 hover:px-4 hover:py-2 hover:rounded-full">Discover</p>
+            <p class="px-4 py-2 text-sm font-medium hover:bg-gray-100 hover:px-4 hover:py-2 hover:rounded-full">Trips</p>
+            <p class="px-4 py-2 text-sm font-medium hover:bg-gray-100 hover:px-4 hover:py-2 hover:rounded-full">Review</p>
+            <p class="px-4 py-2 text-sm font-medium hover:bg-gray-100 hover:px-4 hover:py-2 hover:rounded-full">Forms</p>
         </div>
         <div>
-            <button class="text-xl mt-3 mr-6 bg-black text-white p-2 rounded-3xl hidden md:block">search</button>
+            <button class="text-sm font-medium  bg-black text-white px-4 py-2 rounded-full hidden md:block">Sign In</button>
         </div>
     </nav>
 
     <!-- search section -->
-    <section class=" flex flex-col gap-5 mt-3">
-        <h1 class="text-2xl font-bold text-center">Where To?</h1>
-        <div class="md:text-2xl flex justify-center gap-5 cursor-pointer">
+    <section class=" flex flex-col gap-5 mt-16">
+        <h1 class="text-5xl font-extrabold text-center">Where To?</h1>
+        <div class="md:text-xl flex justify-center gap-14 cursor-pointer">
             <P class="hover:underline">Search All</P>
             <P class="hover:underline">Hotels </P>
             <P class="hover:underline">Things to do</P>
             <P class="hover:underline">Restaurants</P>
             <P class="hover:underline">Holiday Homes</P>
         </div>
-        <div>
-            <div class="w-2/3 border-2 border-black rounded-3xl flex justify-between ml-16 md:ml-40">
-                <i class="fa-solid fa-magnifying-glass mt-3"></i>
-                <input class="outline-none"placeholder="search any thing" type="text">
-                <button class="bg-black text-white rounded-3xl p-2"> Search</button>
+        <div class="flex justify-center item-center my-5">
+            <div class="border w-1/2 flex justify-between p-1 rounded-full shadow-md">
+               <div class="flex items-center mx-3 gap-2  w-full">
+                 <!-- <i class="fa-solid fa-magnifying-glass "></i> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+</svg>
+
+                <input class="outline-none w-full"placeholder="search any thing" type="text">
+               </div>
+                <button class="bg-[#84E9BD] border border-black rounded-3xl px-4 py-2"> Search</button>
             </div>
         </div>
     </section>
 
     <!--Image section-->
     <section class="mt-3 relative text-white">
-        <img class="md:w-2/3 md:ml-40" src="./images/tripimage1.jpeg" alt="">
-        <div class="absolute top-20 md:top-2/3 md:left-44 flex flex-col gap-5 ">
-            <h1>World's best hotels—chosen by you</h1>
-            <p class="md:w-2/4">From beachside resorts to the most unique stays. See the top 1% of hotelsfrom Travellers
+        <img class="w-full h-[450px] rounded-xl" src="./images/landing.jpg" alt="">
+        <div class="absolute bottom-10 left-10  flex flex-col gap-5 ">
+            <h2 class="text-4xl font-extrabold">World's best hotels — chosen by you</h2>
+            <p class="md:w-1/2 text-lg font-semibold">From beachside resorts to the most unique stays. See the top 1% of hotelsfrom Travellers
                 Choice Best of the Best and save your faves.</p>
-            <h1>Revel winners</h1>
+            <button class="bg-white text-black px-4 py-2 font-medium rounded-full w-fit">Reveal winners</button>
         </div>
     </section>
 
     <!--Travel image-->
-    <div class="mt-6 ml-8 md:mx-[100px] ">
-        <h1 class="text-2xl font-bold">Stay at the world's top hotels</h1>
-        <P class="mt-6">2025 Travellers Choice Awards Best of the Best Hotels</P>
-        <div class=" grid grid-cols-2 gap-5 mt-6 md:grid-cols-4">
+    <div class="mt-6 flex flex-col gap-5 ">
+        <h2 class="text-2xl font-bold">Stay at the world's top hotels</h2>
+        <P class="">2025 Travellers Choice Awards Best of the Best Hotels</P>
+        <div class=" grid grid-cols-2 gap-5  md:grid-cols-4">
             <div class="relative">
-                <img src="./images/t1.jpg" alt="">
-                <h2 class="absolute left-10 bottom-3 font-bold text-2xl text-white">World</h2>
+                <img src="./images/t1.jpg" alt="" class="rounded-md">
+                <h2 class="absolute left-5 bottom-4 font-bold text-2xl text-white">World</h2>
             </div>
             <div class="relative">
-                <img src="./images/t2" alt="">
-                <h2 class="absolute left-10 bottom-3 font-bold text-2xl text-white">Luxury</h2>
+                <img src="./images/t2" alt="" class="rounded-md">
+                <h2 class="absolute left-5 bottom-4 font-bold text-2xl text-white">Luxury</h2>
             </div>
             <div class="relative">
-                <img src="./images/t3" alt="">
-                <h2 class="absolute left-10 bottom-3 font-bold text-2xl text-white">Family Friend</h2>
+                <img src="./images/t3" alt="" class="rounded-md">
+                <h2 class="absolute left-5 bottom-4 font-bold text-2xl text-white">Family Friend</h2>
             </div>
             <div class="relative">
-                <img src="./images/t4" alt="">
-                <h2 class="absolute left-10 bottom-3 font-bold text-2xl text-white">One of kind</h2>
+                <img src="./images/t4" alt="" class="rounded-md">
+                <h2 class="absolute left-5 bottom-4 font-bold text-2xl text-white">One of kind</h2>
             </div>
         </div>
     </div>
 
     <!--Trip card-->
-    <div class="md:mx-[100px] ml-8 flex flex-col mt-6 gap-5">
+    <div class="flex flex-col mt-10 gap-5">
         <h1 class="text-2xl font-bold">You might like these</h1>
-        <p class="text-2xl">More things to do in Panjim</p>
+        <p class="text-lg">More things to do in Panjim</p>
         <div class="grid grid-cols-2 gap-5 relative md:grid-cols-4">
-            <div class="relative">
-                <img class="h-48 relative" src="./images/t5.jpg" alt="">
-                <h1>Old Goa Heritage Walk by Make It Happen</h1>
-                <P>4.9</P>
+            <div class="relative flex flex-col gap-2">
+                <img class="h-60 rounded-xl relative" src="./images/t5.jpg" alt="">
+                <h2 class="text-sm font-medium">Old Goa Heritage Walk by Make It Happen</h2>
+                <div class="flex gap-2 items-center">
+                    <P class="">4.9</P>
+                    <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                </div>
+               
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-8 p-1 absolute top-2 right-2 bg-white rounded-full ">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+          
+            </div>
+
+            <div class="relative  flex flex-col gap-2">
+                <img class="h-60 rounded-xl relative" src="./images/t6.jpg" alt="">
+                <h2 class="text-sm font-medium">BLive Electric Bike Tours Discovery of Divar Island</h2>
+                <div class="flex gap-2 items-center">
+                    <P class="">4.9</P>
+                    <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6 absolute top-0 right-0">
+                    stroke="currentColor" class="size-8 p-1 absolute top-2 right-2 bg-white rounded-full">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                 </svg>
             </div>
-            <div class="relative">
-                <img class="h-48 relative" src="./images/t6.jpg" alt="">
-                <h1>BLive Electric Bike Tours Discovery of Divar Island</h1>
-                <P>4.9</P>
+
+            <div class="relative  flex flex-col gap-2">
+                <img class="h-60 rounded-xl" src="./images/t7.jpg" alt="">
+                <h2 class="text-sm font-medium">The Nature Trail at Chorao Island in Goa</h2>
+                <div class="flex gap-2 items-center">
+                    <P class="">4.9</P>
+                    <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6 absolute top-0 right-0 cursor-pointer">
+                    stroke="currentColor" class="size-8 p-1 absolute top-2 right-2 bg-white rounded-full ">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                 </svg>
             </div>
-            <div class="relative">
-                <img class="h-48" src="./images/t7.jpg" alt="">
-                <h1>The Nature Trail at Chorao Island in Goa</h1>
-                <P>4.9</P>
+
+            <div class="relative  flex flex-col gap-2">
+                <img class="h-60 rounded-xl" src="./images/t8.jpg" alt="">
+                <h2 class="text-sm font-medium">Latin Quarter Walk At Fontainhas</h2>
+                <div class="flex gap-2 items-center">
+                    <P class="">4.9</P>
+                    <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                <span class="bg-green-600 rounded-full h-3 w-3"></span>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6 absolute top-0 right-0 cursor-pointer ">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                </svg>
-            </div>
-            <div class="relative">
-                <img class="h-48" src="./images/t8.jpg" alt="">
-                <h1>Latin Quarter Walk At Fontainhas</h1>
-                <P>4.9</P>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6 absolute top-0 right-0">
+                    stroke="currentColor" class="size-8 p-1 absolute top-2 right-2 bg-white rounded-full">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                 </svg>
             </div>
         </div>
     </div>
+
+     </div>
+
 
     <!--Explore-->
-    <div class="bg-pink-300 mt-3">
-        <h1 class="text-2xl font-bold ml-16 md:mx-[100px]">More To Explore</h1>
-        <div class="md:mx-[100px] ml-16 flex gap-5 mt-6 grid grid-cols-2 md:grid-cols-3">
-            <div class="relative">
-                <img src="./images/t9.jpg" alt="">
-                <h3>7 Bangkok hotels that highlight Thailand's </h3>
+    <div class="bg-[#F2F1EC] mt-3">
+        <div class="py-5 mx-40">
+        <h1 class="text-2xl font-bold ">More To Explore</h1>
+        <div class=" flex gap-8 mt-6 grid grid-cols-2 md:grid-cols-3">
+            <div class="relative flex flex-col gap-3">
+                <img src="./images/t9.jpg" alt="" class="rounded-md">
+                <h3 class="font-medium text-center">7 Bangkok hotels that highlight Thailand's </h3>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6 absolute top-0 right-0">
+                    stroke="currentColor" class="size-8 p-1 absolute top-2 right-2 bg-white rounded-full">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                 </svg>
             </div>
-            <div class="relative">
-                <img src="./images/t10.jpg" alt="">
-                <h3>3 days in Tokyo: The perfect itinerary</h3>
+            <div class="relative flex flex-col gap-3">
+                <img src="./images/t10.jpg" alt="" class="rounded-md">
+                <h3 class="font-medium text-center">3 days in Tokyo: The perfect itinerary</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6 absolute top-0 right-0">
+                    stroke="currentColor" class="size-8 p-1 absolute top-2 right-2 bg-white rounded-full">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                 </svg>
             </div>
-            <div class="relative">
-                <img src="./images/t11.jpg" alt="">
-                <h3>Where Bali's best chefs go on their days off</h3>
+            <div class="relative flex flex-col gap-3">
+                <img src="./images/t11.jpg" alt="" class="rounded-md">
+                <h3 class="font-medium text-center">Where Bali's best chefs go on their days off</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6 absolute top-0 right-0">
+                    stroke="currentColor" class="size-8 p-1 absolute top-2 right-2 bg-white rounded-full">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                 </svg>
             </div>
         </div>
+        </div>
     </div>
 
+     <div class=" mx-40">
+
     <!--Destination-->
-    <div class="md:mx-[100px] ml-16 mt-6 text-2xl font-bold">
+    <div class=" mt-6 text-2xl font-bold">
         <h1 class="font-bold">Top destinations for your next holiday</h1>
         <div class="flex justify-between grid grid-cols-2 gap-5 mt-6 md:grid-cols-4">
             <div class="relative">
-                <img src="./images/t12.jpg" alt="">
+                <img src="./images/t12.jpg" alt="" class="rounded-md">
                 <h1 class="absolute bottom-4 left-4 text-white">Rome,Italy</h1>
             </div>
             <div class="relative">
-                <img src="./images/t13.jpg" alt="">
+                <img src="./images/t13.jpg" alt="" class="rounded-md">
                 <h1 class="absolute bottom-4 left-4 text-white">Paris,France</h1>
             </div>
             <div class="relative">
-                <img src="./images/t14.jpg" alt="">
+                <img src="./images/t14.jpg" alt="" class="rounded-md">
                 <h1 class="absolute bottom-4 left-4 text-white">Las Vegas,Nv</h1>
             </div>
             <div class="relative">
-                <img src="./images/t15.jpg" alt="">
+                <img src="./images/t15.jpg" alt="" class="rounded-md">
                 <h1 class="absolute bottom-4 left-4 text-white">Bali Indonesia</h1>
             </div>
         </div>
     </div>
+    </div>
 
     <!--Choice section-->
 
-    <div class="mt-6 relative">
-        <img class="w-full h-[400px]" src="./images/travel image.jpg" alt="">
-        <div class="absolute top-20 left-4 text-white md:text-2xl">
-            <img src="./images/logo.svg" alt="">
+    <div class="mt-10 relative bg-[#FFF7E1] h-[400px] w-full">
+       
+        <div class="flex flex-col  gap-3 justify-center  h-full  mx-40">
+            <img src="./images/logo.svg" alt="" class="w-20 h-20">
             <h3 class="text-black font-bold">Travellers' Choice Awards Best of the Best</h3>
             <p class="w-64 mt-3">Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
-            <button class="bg-black rounded-3xl text-xl cursor-pointer mt-3 p-2">See the winners</button>
+            <button class="bg-black text-white rounded-full text-sm cursor-pointer mt-3 px-4 py-2 font-bold w-fit">See the winners</button>
         </div>
     </div>
+    
 
     <!--Footer Section-->
-    <div class="flex justify-between bg-black text-white mt-6">
-        <div class="hidden md:flex gap-10 m-[50px]">
+    <div class="flex flex-col bg-[#F2F2F2]  mt-6 ">
+        <div class="mx-40 my-10">
+            <div class="flex justify-between my-5">
+        <div class="hidden md:flex gap-10 ">
             <div>
                 <p>About Tripadvisor</p>
                 <p>About Us</p>
@@ -226,19 +273,19 @@
                 <p>Sponsored Placements</p>
             </div>
         </div>
-        <div class="ml-16 mb-4">
+        <div class=" mb-4">
             <p>Tripadvisor Sites</p>
             <p>Book tours and attraction tickets on Viator</p>
         </div>
-    </div>
+        </div>
 
-    <div class="md:flex justify-between bg-black text-white ">
-        <div class="md:m-[50px]">
-            <div class="flex">
-                <img class="w-14" src="./images/small logo.svg" alt="">
-                <P class="mt-6">© 2025 Tripadvisor LLC All rights reserved.</P>
+        <div class="flex justify-between items-start    ">
+         <div class=" flex flex-col gap-2">
+            <div class="flex gap-3 items-center ">
+                <img class="w-7" src="./images/small logo.svg" alt="">
+                <P class="">© 2025 Tripadvisor LLC All rights reserved.</P>
             </div>
-            <div class="hidden md:flex gap-5 mt-3">
+            <div class="hidden md:flex gap-5">
                 <P class="hover:underline">Terms of Use</P>
                 <P class="hover:underline">Privacy and Cookies Statement</P>
                 <P class="hover:underline">Cookie consent</P>
@@ -246,13 +293,14 @@
                 <P class="hover:underline">How the site works</P>
                 <P class="hover:underline">Contact us</P>
             </div>
-            <p class="hidden md:flex mt-6 w-2/3">This is the version of our website addressed to speakers of English in
+            <p class="hidden md:flex  w-2/3 text-xs">This is the version of our website addressed to speakers of English in
                 India. If you are a resident of
                 another country or region, please select the appropriate version of Tripadvisor for your country or
                 region
                 in the drop-down menu. Show more</p>
         </div>
-        <div class="ml-16 mt-6 text-black md:mx-[50px]  md:flex flex-col gap-2">
+
+         <div class="flex justify-start  items-center gap-2">
             <select name="country" id="count">
                 <option value="india">India</option>
                 <option value="america">America</option>
@@ -268,7 +316,12 @@
                 <option value="england">^ England pound</option>
             </select>
         </div>
-    </div>
+        </div>
+   
+
+   </div>
+     </div>
+   
 </body>
 
 </html>
